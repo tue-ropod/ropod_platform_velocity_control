@@ -15,7 +15,7 @@ SW_COM1_USE_TS			=  hex2dec('8000');             %  0x8000
 AgentNumber = 1;
 
 %% smart wheels limits and offset
-run /home/cesar/Documents/ROPOD_LINUX/Matlabdocs/Global_Libraries/ropod_parameters/motor_parameters
+run motor_parameters
 sw_ini_enable   = 1;
 max_sw_current  =  10; % [A]
 sw_tau_2_current = 1/motor_physical_parameters.torqueconstant.value;
