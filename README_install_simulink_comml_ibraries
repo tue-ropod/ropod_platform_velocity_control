@@ -1,0 +1,22 @@
+create file
+/etc/ld.so.conf.d/usr-local.conf
+
+with this content
+# user lib default configuration
+/usr/local/MATLAB/auxlib/
+
+put to that these library files from /usr/local/MATLAB/R2017b/bin/glnxa64:
+
+libmwnetworkdevice.so
+
+
+run 
+sudo ldconfig
+
+
+- With ldd you can figure out library depndencies
+
+- Joystick configuration
+ Mode lamp OFF
+ swicth at the back at X (so not D)
+
